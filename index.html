@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Резервации – Музикална стая | Младежки център Стара Загора</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
       padding: 0;
+      font-family: 'Metal Mania', sans-serif;
+      background: #0c0c0c;
+      color: #e5e5e5;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
     header {
-      background: #2c3e50;
-      color: white;
-      padding: 15px;
+      background: linear-gradient(90deg, #1a1a1a, #3d0000);
+      padding: 25px;
       text-align: center;
-      font-size: 24px;
+      font-size: 32px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border-bottom: 3px solid #b30000;
+      color: #e5e5e5;
+      text-shadow: 0 0 10px #b30000;
     }
+
     .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background: white;
-      margin-top: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 25px;
+      background: #1a1a1a;
+      border: 2px solid #3d0000;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 0 25px rgba(179,0,0,0.4);
     }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #ff3333;
+      text-shadow: 0 0 10px #8b0000;
+    }
+
     iframe {
       width: 100%;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
+      filter: grayscale(40%) brightness(90%);
+      height: 650px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+
+    .section-divider {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #b30000, transparent);
+      margin: 40px 0;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
+  <header>
+    Резервации за музикалната стая – Младежки център Стара Загора
+  </header>
 
-<header>
-  Резервации за музикалната стая – Младежки център Стара Загора
-</header>
-
-<div class="container">
+  <div class="container">
     <h2>Стъпка 1: Провери графика</h2>
+    <iframe src="https://calendar.google.com/calendar/embed?src=4a52cc786f78ec968257b01560c119e9a33fc7e05f40645ab4a35c3976404d82%40group.calendar.google.com&ctz=Europe%2FSofia"></iframe>
+  </div>
 
-  <iframe 
-    src="https://calendar.google.com/calendar/embed?src=4a52cc786f78ec968257b01560c119e9a33fc7e05f40645ab4a35c3976404d82%40group.calendar.google.com&ctz=Europe%2FSofia" 
-    width="800" 
-    height="600">
-  </iframe>
-</div>
+  <div class="section-divider"></div>
 
-<div class="container">
-  <h2>Стъпка 2: Попълни формата за резервация</h2>
-
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLScWj_4o5j1eEhy26pdDexn_KmJt-gSBVzEXVB5yelHXVl2VvA/viewform?embedded=true" 
-    width="640" 
-    height="900">
-  </iframe>
-</div>
-
+  <div class="container">
+    <h2>Стъпка 2: Попълни формата за резервация</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWj_4o5j1eEhy26pdDexn_KmJt-gSBVzEXVB5yelHXVl2VvA/viewform?embedded=true"></iframe>
+  </div>
 </body>
 </html>
